@@ -1,38 +1,362 @@
-.App {
+body {
+  background: url(./assets/bg-cal.jpg) no-repeat center fixed;
+  background-size: 100% 100%;
+}
+
+.left-event {
+  background-color: #fcfcfcc5;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.164);
+  padding: 20px 30px;
+  border-radius: 0 0 10px 0;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.right-event {
+  background-color: #fcfcfcc5;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+  padding: 10px 30px;
+  /* border-radius: 10px; */
+}
+
+.right-event h4 {
+  color: rgb(255, 175, 71);
+}
+
+.right-event h1 {
+  color: rgb(17, 128, 255);
+}
+
+.left-event h4 {
+  color: rgb(17, 128, 255);
+  margin-bottom: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  background-color: #fcfcfcee;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+  padding: 10px 30px;
+  margin-left: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.content:hover {
+  cursor: pointer;
+  background-color: #d4e8fad0;
+}
+
+.title-left {
+  cursor: pointer;
+  color: rgb(65, 65, 253);
+}
+
+.title-left:hover {
+  color: rgb(5, 5, 197);
+  text-decoration: underline;
+}
+
+.new-content {
+  padding-top: 10px;
+  margin: 0 40px;
+  margin-top: 65px;
+  background-color: #fcfcfcc5;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.new-content h2 {
+  color: rgb(17, 128, 255);
+}
+
+.new-content button {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 1150px) {
+  .right-event h4 {
+    font-size: 20px;
+  }
+
+  .right-event h1 {
+    font-size: 35px;
+  }
+
+  .right-event td {
+    font-size: 15px;
+  }
+
+  .left-event h4 {
+    font-size: 20px;
+  }
+  
+  .left-event text {
+    font-size: 15px;
+  }
+
+  .left-event {
+    padding-right: 20px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .left-event h4 {
+    font-size: 30px;
+  }
+  
+  .left-event text {
+    font-size: 18px;
+  }
+
+  .left-event {
+    padding-right: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .right-event {
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .right-event h4 {
+    font-size: 20px;
+  }
+
+  .right-event h1 {
+    font-size: 35px;
+  }
+
+  .right-event td {
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+
+  .new-content {
+    padding-top: 10px;
+    margin: 0 40px;
+    margin-top: 65px;
+    background-color: #fcfcfcc5;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+  
+  .new-content h2 {
+    font-size: 20px;
+  }
+
+  .new-content label {
+    font-size: 14px;
+  }
+
+  .new-content button {
+    font-size: 14px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 480px) {
+  .left-event h4 {
+    font-size: 30px;
+  }
+  
+  .left-event text {
+    font-size: 18px;
+  }
+
+  .left-event {
+    padding-right: 20px;
+  }
+  
+  .right-event h4 {
+    font-size: 18px;
+  }
+
+  .right-event td {
+    font-size: 13px;
+  }
+
+  .right-event h1 {
+    font-size: 30px;
+  }
+
+  .right-event button {
+    font-size: 15px;
+  }
+
+  .new-content button {
+    margin-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 420px) {
+  .left-event h4 {
+    font-size: 25px;
+  }
+  
+  .left-event text {
+    font-size: 16px;
+  }
+
+  .left-event {
+    padding-right: 20px;
+  }
+  
+  .right-event h4 {
+    font-size: 17px;
+  }
+
+  .right-event h1 {
+    font-size: 25px;
+  }
+
+  .right-event button {
+    font-size: 13px;
+  }
+
+  .right-event td {
+    font-size: 13px;
+  }
+  
+  .new-content h2 {
+    font-size: 18px;
+  }
+
+  .new-content label {
+    font-size: 12px;
+  }
+
+  .new-content button {
+    margin-top: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 12px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 370px) {
+  .left-event text {
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-event {
+    padding-right: 20px;
   }
+  
+  .right-event h4 {
+    font-size: 17px;
+  }
+
+  .right-event h1 {
+    font-size: 22px;
+  }
+
+  .right-event button {
+    font-size: 11px;
+  }
+
+  .right-event td {
+    font-size: 13px;
+  }
+
+  .new-content button {
+    margin-top: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 11px;
+  }
+
+}
+
+@media (max-width: 335px) {
+  .left-event h4 {
+    font-size: 22px;
+  }
+
+  .left-event {
+    padding-right: 20px;
+  }
+  
+  .right-event h4 {
+    font-size: 16px;
+  }
+
+  .right-event h1 {
+    font-size: 19px;
+  }
+
+  .right-event button {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .right-event td {
+    font-size: 13px;
+  }
+  
+  .new-content h2 {
+    font-size: 14px;
+  }
+
+  .new-content label {
+    font-size: 10px;
+  }
+
+  .new-content button {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 290px) {
+  .left-event h4 {
+    font-size: 22px;
+  }
+  
+  .left-event text {
+  }
+
+  .left-event {
+    padding-right: 20px;
+  }
+  
+  .right-event h4 {
+    font-size: 16px;
+  }
+
+  .right-event h1 {
+    font-size: 16px;
+  }
+
+  .right-event button {
+    font-size: 9px;
+    padding: 3px;
+  }
+
+  .right-event td {
+    font-size: 12px;
+  }
+
+  .new-content button {
+    margin-top: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 10px;
+  }
+
 }
