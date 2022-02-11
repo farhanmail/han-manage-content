@@ -14,7 +14,7 @@ body {
 
 .right-event {
   background-color: #fcfcfcc5;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 30px;
   /* border-radius: 10px; */
 }
@@ -35,7 +35,7 @@ body {
 
 .content {
   background-color: #fcfcfcee;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 30px;
   margin-left: 15px;
   border-radius: 10px;
@@ -62,7 +62,7 @@ body {
   margin: 0 40px;
   margin-top: 65px;
   background-color: #fcfcfcc5;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 30px;
   border-radius: 10px;
 }
@@ -93,7 +93,7 @@ body {
   .left-event h4 {
     font-size: 20px;
   }
-  
+
   .left-event text {
     font-size: 15px;
   }
@@ -101,14 +101,13 @@ body {
   .left-event {
     padding-right: 20px;
   }
-
 }
 
 @media (max-width: 575px) {
   .left-event h4 {
     font-size: 30px;
   }
-  
+
   .left-event text {
     font-size: 18px;
   }
@@ -121,7 +120,7 @@ body {
   .right-event {
     border-radius: 10px 10px 10px 10px;
   }
-  
+
   .right-event h4 {
     font-size: 20px;
   }
@@ -145,11 +144,11 @@ body {
     margin: 0 40px;
     margin-top: 65px;
     background-color: #fcfcfcc5;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px 30px;
     border-radius: 10px;
   }
-  
+
   .new-content h2 {
     font-size: 20px;
   }
@@ -167,7 +166,7 @@ body {
   .left-event h4 {
     font-size: 30px;
   }
-  
+
   .left-event text {
     font-size: 18px;
   }
@@ -175,7 +174,7 @@ body {
   .left-event {
     padding-right: 20px;
   }
-  
+
   .right-event h4 {
     font-size: 18px;
   }
@@ -198,14 +197,13 @@ body {
     padding-right: 20px;
     font-size: 13px;
   }
-
 }
 
 @media (max-width: 420px) {
   .left-event h4 {
     font-size: 25px;
   }
-  
+
   .left-event text {
     font-size: 16px;
   }
@@ -213,7 +211,7 @@ body {
   .left-event {
     padding-right: 20px;
   }
-  
+
   .right-event h4 {
     font-size: 17px;
   }
@@ -229,7 +227,7 @@ body {
   .right-event td {
     font-size: 13px;
   }
-  
+
   .new-content h2 {
     font-size: 18px;
   }
@@ -254,7 +252,7 @@ body {
   .left-event {
     padding-right: 20px;
   }
-  
+
   .right-event h4 {
     font-size: 17px;
   }
@@ -277,7 +275,6 @@ body {
     padding-right: 16px;
     font-size: 11px;
   }
-
 }
 
 @media (max-width: 335px) {
@@ -288,7 +285,7 @@ body {
   .left-event {
     padding-right: 20px;
   }
-  
+
   .right-event h4 {
     font-size: 16px;
   }
@@ -305,7 +302,7 @@ body {
   .right-event td {
     font-size: 13px;
   }
-  
+
   .new-content h2 {
     font-size: 14px;
   }
@@ -320,21 +317,20 @@ body {
     padding-right: 15px;
     font-size: 10px;
   }
-
 }
 
 @media (max-width: 290px) {
   .left-event h4 {
     font-size: 22px;
   }
-  
+
   .left-event text {
   }
 
   .left-event {
     padding-right: 20px;
   }
-  
+
   .right-event h4 {
     font-size: 16px;
   }
@@ -358,5 +354,12 @@ body {
     padding-right: 14px;
     font-size: 10px;
   }
+}
 
+footer {
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
 }
