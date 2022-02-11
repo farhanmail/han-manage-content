@@ -20,16 +20,32 @@ function Home() {
     axios
       .get("https://limitless-forest-49003.herokuapp.com/posts")
       .then((res) => {
-        let results = res.data.map(({ title }) => ({ title }));
         setGetAllData(res.data);
-        const sortTitle = results.sort((a, b) => {
+        const sortTitle = res.data.sort((a, b) => {
           const prev = a.title.toUpperCase();
           const next = b.title.toUpperCase();
           if (prev < next) return -1;
           if (prev > next) return 1;
           return 0;
         });
+        console.log("sortTitle", sortTitle);
         setGetAllTitle(sortTitle);
+        setLoading(true);
+        // console.log(sortTitle);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    axios
+      .get("https://limitless-forest-49003.herokuapp.com/posts")
+      .then((res) => {
+        const sortDate = res.data.sort(function (a, b) {
+          a = new Date(a.updated_at);
+          b = new Date(b.updated_at);
+          return a > b ? -1 : a < b ? 1 : 0;
+        });
+        console.log("sortDate", sortDate);
+        setGetAllData(sortDate);
         setLoading(true);
         // console.log(sortTitle);
       })
@@ -67,7 +83,7 @@ function Home() {
         onHide={() => setLgShowDetail(false)}
         centered
       >
-        <Modal.Header closeButton>
+        <Modal.Header closeButton className="detail-modal">
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="d-flex justify-content-start">
@@ -108,7 +124,7 @@ function Home() {
         onHide={() => setLgShowDelete(false)}
         centered
       >
-        <Modal.Header closeButton>
+        <Modal.Header closeButton className="detail-modal">
           <Modal.Title>Delete This Content?</Modal.Title>
         </Modal.Header>
         <Modal.Body className="d-flex justify-content-end">
